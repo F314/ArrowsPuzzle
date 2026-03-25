@@ -1,0 +1,169 @@
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="expires" content="0">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="imagetoolbar" content="no"><title>   Arrows Puzzle </title>
+<META NAME="keywords" content=" edge matching puzzle,Dragndrop,drag,drop,js,math,puzzle">
+<META NAME="description" content=" Drag'n Drop Arrows-Puzzle.">
+<META NAME="Content-Language" content="en">
+<META NAME="author" content="Franz Pichler">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<META NAME="revisit-after" CONTENT="20 days">
+<script type="text/javascript">
+<!--       -->
+<!-- http://members.chello.at/franz-pichler1/       -->
+<!-- ***************************************       -->
+<!--
+
+var tiledir= new Array(3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4,6,2,6,4,3,3); var sm=' ;-)) ';
+
+var tile,nn,nr, s, newtile, imgstrg;
+
+function rotate(){	
+	tile = dd.obj.name ;
+	nn = tile.slice(1,3) ; 
+	nr = 10*nn.charCodeAt(0)-528+nn.charCodeAt(1);
+	s= (tiledir[nr]&3)+1;  tiledir[nr] = s;
+	newtile   = tile.slice(0,4)+s+".gif" ;		
+	window.status=" " + newtile.slice(0,5)  +"  ";
+	dd.obj.swapImage(newtile);	
+}
+
+function KeyCheck(e){ 
+   var KeyID = (window.event) ? event.keyCode : e.keyCode; 
+     	if(KeyID == 17 && dd.obj )   rotate() ;       
+}
+
+document.onkeydown = KeyCheck;
+
+//-->
+</script> 
+</head>
+ <body bgcolor="FF00FF" background="./tiles/arrows_bg_new.GIF">
+ <span id="fc-9012"></span>
+
+
+<script type="text/javascript" src="./tiles/wz_dragdrop_fp.js"></script>
+<!--   DHTML Bibliothek  :  wz_dragdrop_fp.js     -->
+<!--     (C) Walter Zorn : http://www.walterzorn.de  -->
+<div id="t01" style="position:absolute;left:40;top:372;">
+	<img name="t01-1" src="./tiles/t01-1.gif" width="55" height="55" alt="tile 01"></div>
+<div id="t02" style="position:absolute;left:112;top:392;">
+	<img name="t05-1" src="./tiles/t05-2.gif" width="55" height="55" alt="tile 05"></div>
+<div id="t03" style="position:absolute;left:168;top:392;">
+	<img name="t04-1" src="./tiles/t04-1.gif" width="55" height="55" alt="tile 04"></div>
+<div id="t04" style="position:absolute;left:56;top:448;">
+	<img name="t12-1" src="./tiles/t12-3.gif" width="55" height="55" alt="tile 12"></div>
+<div id="t05" style="position:absolute;left:112;top:448;">
+	<img name="t02-1" src="./tiles/t02-4.gif" width="55" height="55" alt="tile 02"></div>
+<div id="t06" style="position:absolute;left:168;top:448;">
+	<img name="t15-1" src="./tiles/t15-3.gif" width="55" height="55" alt="tile 15"></div>
+
+
+
+<!--
+
+<div id="t01" style="position:absolute;left:56;top:392;">
+	<img name="t04-1" src="./tiles/t04-1.gif" width="55" height="55" alt="tile 04"></div>
+<div id="t02" style="position:absolute;left:112;top:392;">
+	<img name="t15-1" src="./tiles/t15-3.gif" width="55" height="55" alt="tile 15"></div>
+<div id="t03" style="position:absolute;left:168;top:392;">
+	<img name="t12-1" src="./tiles/t12-1.gif" width="55" height="55" alt="tile 12"></div>
+<div id="t04" style="position:absolute;left:56;top:448;">
+	<img name="t02-1" src="t02-4.gif" width="55" height="55" alt="tile 02"></div>
+<div id="t05" style="position:absolute;left:112;top:448;">
+	<img name="t05-1" src="t05-1.gif" width="55" height="55" alt="tile 05"></div>
+<div id="t06" style="position:absolute;left:168;top:448;">
+	<img name="t07-1" src="t07-2.gif" width="55" height="55" alt="tile 07"></div>
+<div id="t07" style="position:absolute;left:56;top:504;">
+	<img name="t03-1" src="t03-1.gif" width="55" height="55" alt="tile 03"></div>
+<div id="t08" style="position:absolute;left:112;top:504;">
+	<img name="t01-1" src="t01-1.gif" width="55" height="55" alt="tile 01"></div>
+<div id="t09" style="position:absolute;left:168;top:504;">
+	<img name="t08-1" src="t08-1.gif" width="55" height="55" alt="tile 08"></div>
+	
+
+//-->
+
+<div id="t10" style="position:absolute;left:280;top:336;">
+	<img name="t13-1" src="t13-3.gif" width="55" height="55" alt="tile 13"></div>
+<div id="t11" style="position:absolute;left:336;top:336;">
+	<img name="t23-1" src="t23-4.gif" width="55" height="55" alt="tile 23"></div>
+<div id="t12" style="position:absolute;left:392;top:336;">
+	<img name="t20-1" src="t20-2.gif" width="55" height="55" alt="tile 20"></div>
+<div id="t13" style="position:absolute;left:448;top:336;">
+	<img name="t24-1" src="t24-3.gif" width="55" height="55" alt="tile 24"></div>
+<div id="t14" style="position:absolute;left:280;top:392;">
+	<img name="t18-1" src="t18-4.gif" width="55" height="55" alt="tile 18"></div>
+<div id="t15" style="position:absolute;left:336;top:392;">
+	<img name="t21-1" src="t21-2.gif" width="55" height="55" alt="tile 21"></div>
+<div id="t16" style="position:absolute;left:392;top:392;">
+	<img name="t25-1" src="t25-3.gif" width="55" height="55" alt="tile 25"></div>
+<div id="t17" style="position:absolute;left:448;top:392;">
+	<img name="t06-1" src="t06-2.gif" width="55" height="55" alt="tile 06"></div>
+<div id="t18" style="position:absolute;left:280;top:448;">
+	<img name="t19-1" src="t19-4.gif" width="55" height="55" alt="tile 19"></div>
+<div id="t19" style="position:absolute;left:336;top:448;">
+	<img name="t22-1" src="t22-2.gif" width="55" height="55" alt="tile 22"></div>
+<div id="t20" style="position:absolute;left:392;top:448;">
+	<img name="t09-1" src="t09-3.gif" width="55" height="55" alt="tile 09"></div>
+<div id="t21" style="position:absolute;left:448;top:448;">
+	<img name="t14-1" src="t14-1.gif" width="55" height="55" alt="tile 14"></div>
+<div id="t22" style="position:absolute;left:280;top:504;">
+	<img name="t16-1" src="t16-2.gif" width="55" height="55" alt="tile 16"></div>
+<div id="t23" style="position:absolute;left:336;top:504;">
+	<img name="t17-1" src="t17-3.gif" width="55" height="55" alt="tile 17"></div>
+<div id="t24" style="position:absolute;left:392;top:504;">
+	<img name="t10-1" src="t10-1.gif" width="55" height="55" alt="tile 10"></div>
+<div id="t25" style="position:absolute;left:448;top:504;">
+	<img name="t11-1" src="t11-4.gif" width="55" height="55" alt="tile 11"></div>
+
+<div id="imgpreload" style="visibility:hidden;position:absolute; left:50;top:-300";>
+
+<IMG SRC="./tiles/t01-2.gif"><IMG SRC="./tiles/t01-3.gif"><IMG SRC="./tiles/t01-4.gif">
+<IMG SRC="./tiles/t02-3.gif"><IMG SRC="./tiles/t02-1.gif"><IMG SRC="./tiles/t02-2.gif">
+<IMG SRC="./tiles/t03-4.gif"><IMG SRC="./tiles/t03-3.gif"><IMG SRC="./tiles/t03-1.gif">
+<IMG SRC="./tiles/t04-2.gif"><IMG SRC="./tiles/t04-3.gif"><IMG SRC="./tiles/t04-4.gif">
+<IMG SRC="./tiles/t05-1.gif"><IMG SRC="./tiles/t05-3.gif"><IMG SRC="./tiles/t05-4.gif">
+
+<IMG SRC="./tiles/t06-2.gif"><IMG SRC="./tiles/t06-3.gif"><IMG SRC="./tiles/t06-4.gif">
+
+<IMG SRC="./tiles/t07-2.gif"><IMG SRC="./tiles/t07-3.gif"><IMG SRC="./tiles/t07-4.gif">
+<IMG SRC="./tiles/t08-2.gif"><IMG SRC="./tiles/t08-1.gif"><IMG SRC="./tiles/t08-4.gif">
+<IMG SRC="./tiles/t09-1.gif"><IMG SRC="./tiles/t09-3.gif"><IMG SRC="./tiles/t09-4.gif">
+<IMG SRC="./tiles/t10-2.gif"><IMG SRC="./tiles/t10-1.gif"><IMG SRC="./tiles/t10-4.gif">
+<IMG SRC="./tiles/t11-2.gif"><IMG SRC="./tiles/t11-3.gif"><IMG SRC="./tiles/t11-1.gif">
+
+<IMG SRC="./tiles/t12-1.gif"><IMG SRC="./tiles/t12-2.gif"><IMG SRC="./tiles/t12-4.gif">
+<IMG SRC="./tiles/t13-1.gif"><IMG SRC="./tiles/t13-3.gif"><IMG SRC="./tiles/t13-4.gif">
+<IMG SRC="./tiles/t14-2.gif"><IMG SRC="./tiles/t14-3.gif"><IMG SRC="./tiles/t14-1.gif">
+
+<IMG SRC="./tiles/t15-2.gif"><IMG SRC="./tiles/t15-3.gif"><IMG SRC="./tiles/t15-1.gif">
+<IMG SRC="./tiles/t16-1.gif"><IMG SRC="./tiles/t16-3.gif"><IMG SRC="./tiles/t16-4.gif">
+<IMG SRC="./tiles/t17-2.gif"><IMG SRC="./tiles/t17-3.gif"><IMG SRC="./tiles/t17-1.gif">
+<IMG SRC="./tiles/t18-1.gif"><IMG SRC="./tiles/t18-3.gif"><IMG SRC="./tiles/t18-4.gif">
+<IMG SRC="./tiles/t19-1.gif"><IMG SRC="./tiles/t19-3.gif"><IMG SRC="./tiles/t19-4.gif">
+<IMG SRC="./tiles/t20-2.gif"><IMG SRC="./tiles/t20-3.gif"><IMG SRC="./tiles/t20-4.gif">
+<IMG SRC="./tiles/t21-2.gif"><IMG SRC="./tiles/t21-3.gif"><IMG SRC="./tiles/t21-1.gif">
+<IMG SRC="./tiles/t22-1.gif"><IMG SRC="./tiles/t22-3.gif"><IMG SRC="./tiles/t22-4.gif">
+<IMG SRC="./tiles/t23-2.gif"><IMG SRC="./tiles/t23-1.gif"><IMG SRC="./tiles/t23-4.gif">
+<IMG SRC="./tiles/t24-2.gif"><IMG SRC="./tiles/t24-3.gif"><IMG SRC="./tiles/t24-4.gif">
+<IMG SRC="./tiles/t25-2.gif"><IMG SRC="./tiles/t25-3.gif"><IMG SRC="./tiles/t25-4.gif">
+</div>
+<script type="text/javascript">
+<!-- 
+SET_DHTML("t01-1", "t02-1", "t03-1", "t04-1", "t05-1", "t06-1", "t07-1", "t08-1", "t09-1", "t10-1",
+	"t11-1", "t12-1", "t13-1", "t14-1", "t15-1", "t16-1", "t17-1",  "t18-1", "t19-1", "t20-1",
+	"t21-1", "t22-1", "t23-1", "t24-1", "t25-1");
+//-->
+</script> 
+</body> </html>
+
+
+
+
+
+
